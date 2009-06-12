@@ -25,7 +25,7 @@
 ; Welcome page
 !insertmacro MUI_PAGE_WELCOME
 ; License page
-!insertmacro MUI_PAGE_LICENSE "..\License.txt"
+!insertmacro MUI_PAGE_LICENSE "License.txt"
 ; Directory page
 !insertmacro MUI_PAGE_DIRECTORY
 ; Instfiles page
@@ -51,18 +51,18 @@ Section "MainSection" SEC01
 
   SetOutPath "$INSTDIR" ; Sets the folder where the folder of installation to be $INSTDIR
   SetOverwrite ifnewer ; Files will be overwritten only if their modification date of the new file is more recent
-  File "..\AnaLogQCT.exe" ; This command actually copy the file in the argument to the $INSTDIR directory.
-  File "..\FilterLog.exe"
-  File "..\License.txt"
-  File "..\IndexHorizontal.html"
-  File "..\IndexVertical.html"
-  File "..\Initial.html"
-  File "..\AnaLogQCT user manual.htm"
-  File "..\FilterLog user manual.htm"
-  File "..\DLF2TXT.pl"
-  File "..\TXT2HTM.pl"
-  File "..\ColourCodes.txt"
-  File "..\QCATCodes.txt"
+  File "..\bin\AnaLogQCT.exe" ; This command actually copy the file in the argument to the $INSTDIR directory.
+  File "..\FilterLog\bin\FilterLog.exe"
+  File "License.txt"
+  File "..\util\IndexHorizontal.html"
+  File "..\util\IndexVertical.html"
+  File "..\util\Initial.html"
+  File "..\util\AnaLogQCT user manual.htm"
+  File "..\FilterLog\util\FilterLog user manual.htm"
+  File "..\util\DLF2TXT.pl"
+  File "..\util\TXT2HTM.pl"
+  File "..\FilterLog\util\ColourCodes.txt"
+  File "..\util\QCATCodes.txt"
 
   ; Copy filters
   SetOverwrite off ; If user already possess filters they are not overwritten
