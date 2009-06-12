@@ -43,7 +43,7 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
-# ADD CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Yu"stdafx.h" /FD /c
+# ADD CPP /nologo /MT /W3 /GX /O2 /I "../inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Yu"stdafx.h" /FD /c
 # ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x809 /d "NDEBUG" /d "_AFXDLL"
@@ -91,40 +91,35 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\AnaLog.cpp
+SOURCE=.\src\AnaLog.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\AnaLog.rc
+SOURCE=.\src\AnaLogDoc.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\AnaLogDoc.cpp
+SOURCE=.\src\AnaLogView.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\AnaLogView.cpp
+SOURCE=.\src\FilterDialog.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterDialog.cpp
+SOURCE=.\src\FolderDlg.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FolderDlg.cpp
+SOURCE=.\src\MainFrm.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\MainFrm.cpp
+SOURCE=.\src\SettingsDialog.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\SettingsDialog.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\StdAfx.cpp
-# ADD CPP /Yc"stdafx.h"
+SOURCE=.\src\StdAfx.cpp
 # End Source File
 # End Group
 # Begin Group "Header Files"
@@ -132,39 +127,39 @@ SOURCE=.\StdAfx.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
-SOURCE=.\AnaLog.h
+SOURCE=.\inc\AnaLog.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\AnaLogDoc.h
+SOURCE=.\inc\AnaLogDoc.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\AnaLogView.h
+SOURCE=.\inc\AnaLogView.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterDialog.h
+SOURCE=.\inc\FilterDialog.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FolderDlg.h
+SOURCE=.\inc\FolderDlg.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\MainFrm.h
+SOURCE=.\inc\MainFrm.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Resource.h
+SOURCE=.\inc\resource.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\SettingsDialog.h
+SOURCE=.\inc\SettingsDialog.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\StdAfx.h
+SOURCE=.\inc\StdAfx.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"
