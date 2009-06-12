@@ -67,10 +67,7 @@ Section "MainSection" SEC01
   ; Copy filters
   SetOverwrite off ; If user already possess filters they are not overwritten
   SetOutPath $INSTDIR\Filters
-  File "..\Filters\Basic.flt"
-  File "..\Filters\IFHO.flt"
-  File "..\Filters\LAU and RAU.flt"
-  File "..\Filters\OOS.flt"
+  File "..\util\Filters\Basic.flt"
 
 SectionEnd
 
