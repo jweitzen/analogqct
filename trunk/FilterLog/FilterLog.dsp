@@ -96,6 +96,10 @@ SOURCE=.\src\DocManagerEx.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\FilterLog.rc
+# End Source File
+# Begin Source File
+
 SOURCE=.\src\FilterInfo.cpp
 # End Source File
 # Begin Source File
