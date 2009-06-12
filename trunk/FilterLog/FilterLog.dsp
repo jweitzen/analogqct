@@ -43,7 +43,8 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
-# ADD CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Yu"stdafx.h" /FD /c
+# ADD CPP /nologo /MT /W3 /GX /O2 /I "inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FD /c
+# SUBTRACT CPP /YX /Yc /Yu
 # ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x809 /d "NDEBUG" /d "_AFXDLL"
@@ -91,44 +92,39 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\DocManagerEx.cpp
+SOURCE=.\src\DocManagerEx.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterInfo.cpp
+SOURCE=.\src\FilterInfo.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLog.cpp
+SOURCE=.\src\FilterLog.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLog.rc
+SOURCE=.\src\FilterLogDoc.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLogDoc.cpp
+SOURCE=.\src\FilterLogView.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLogView.cpp
+SOURCE=.\src\InPlaceEdit.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\InPlaceEdit.cpp
+SOURCE=.\src\InPlaceList.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\InPlaceList.cpp
+SOURCE=.\src\MainFrm.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\MainFrm.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\StdAfx.cpp
-# ADD CPP /Yc"stdafx.h"
+SOURCE=.\src\StdAfx.cpp
 # End Source File
 # End Group
 # Begin Group "Header Files"
@@ -136,43 +132,43 @@ SOURCE=.\StdAfx.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
-SOURCE=.\DocManagerEx.h
+SOURCE=.\inc\DocManagerEx.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterInfo.h
+SOURCE=.\inc\FilterInfo.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLog.h
+SOURCE=.\inc\FilterLog.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLogDoc.h
+SOURCE=.\inc\FilterLogDoc.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FilterLogView.h
+SOURCE=.\inc\FilterLogView.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\InPlaceEdit.h
+SOURCE=.\inc\InPlaceEdit.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\InPlaceList.h
+SOURCE=.\inc\InPlaceList.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\MainFrm.h
+SOURCE=.\inc\MainFrm.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Resource.h
+SOURCE=.\inc\resource.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\StdAfx.h
+SOURCE=.\inc\StdAfx.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"
@@ -195,9 +191,5 @@ SOURCE=.\res\FilterLogDoc.ico
 SOURCE=.\res\Toolbar.bmp
 # End Source File
 # End Group
-# Begin Source File
-
-SOURCE=.\ReadMe.txt
-# End Source File
 # End Target
 # End Project
